@@ -17,15 +17,15 @@ class AbsenceBloc extends Bloc<AbsenceEvent, AbsenceState> {
   
   @override
   Stream<AbsenceState> mapEventToState(AbsenceEvent event) async* {
-    //if (event is AbsenceLoad) {
-      //yield AbsenceLoading();
-      //try {
-       // final absences = await _absenceService.fetchAbsences(currentPage);
-        //yield AbsenceLoadSuccess(absences);
-      //} catch (_) {
-        //yield AbsenceLoadFailure();
-      //}
-      //}
+    if (event is AbsenceLoad) {
+      yield AbsenceLoading();
+      try {
+        final absences = await _absenceService.fetchAbsences(currentPage);
+        yield AbsenceLoadSuccess(absences);
+      } catch (_) {
+        yield AbsenceLoadFailure();
+      }
+    }
         if (event is AbsenceLoadMore) {
     yield AbsenceLoading();
     try {
