@@ -10,7 +10,7 @@ abstract class AbsenceEvent extends Equatable {
   List<Object> get props => [];
 }
 
-//class AbsenceLoad extends AbsenceEvent {}
+class AbsenceLoad extends AbsenceEvent {}
 
 class AbsenceFilter extends AbsenceEvent {
   final String type;
