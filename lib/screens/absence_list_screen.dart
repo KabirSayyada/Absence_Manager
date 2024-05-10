@@ -27,7 +27,7 @@ class _AbsenceListScreenState extends State<AbsenceListScreen> {
   void initState() {
     super.initState();
     //Future.microtask(() {
- //   context.read<AbsenceBloc>().add(AbsenceLoad());
+    context.read<AbsenceBloc>().add(AbsenceLoad());
     context.read<AbsenceBloc>().add(AbsenceCountRequested());
   //});
   }
