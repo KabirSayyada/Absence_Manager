@@ -1,4 +1,4 @@
-# crewmeister_absence_manager
+# absence_manager
 
 This project is a solution for company owners, it offers a way for them to handle and manage vacation and absences of employees in a simple and very effective way.
 
